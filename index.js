@@ -13,7 +13,7 @@ db.authenticate()
 
 
 // Definir puerto
-const port = process.env.DB_PORT || 4000 ;
+const port = process.env.PORT || '4000';
 
 //Habilitar pug
  app.set('view engine','pug')
@@ -38,4 +38,3 @@ app.use('/',router);
 app.listen(port,() =>{
     console.log(`El Servidor esta funcionando en el puerto ${port}`)
 })
-
